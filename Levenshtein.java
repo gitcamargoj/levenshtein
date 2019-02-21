@@ -84,13 +84,13 @@ public class Levenshtein {
     }
 
     private int distancia(int contador) {
-        if ((contador >= 60 && contador <= 72) || contador > 72) {
+        if ((contador >= 40 && contador <= 60) || contador > 60) {
             return 2;
-        } else if (contador >= 40 && contador <= 59) {
-            return 3;
         } else if (contador >= 20 && contador <= 39) {
+            return 3;
+        } else if (contador >= 6 && contador <= 19) {
             return 4;
-        } else if (contador <= 19) {
+        } else if (contador <= 6) {
             return 5;
         }
         return 0;
