@@ -64,7 +64,7 @@ public class Levenshtein {
             for (int j = 0; j < secundaria.length(); j++) {
                 if (primaria.charAt(i) == secundaria.charAt(j)) ct++;
             }
-            contador+=(ct*3);
+            contador+=(ct*2);
             ct = 0;
         }
 
